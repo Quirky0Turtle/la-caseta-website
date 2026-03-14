@@ -45,14 +45,15 @@ nav a.active{
 color:#d4a24c;
 }
 
-/* HERO SECTION */
+/* HERO */
 
 .hero{
+
 height:65vh;
 
 background:
-linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-url("https://images.unsplash.com/photo-1604908176997-4311b7df3b6a");
+linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+url("paella.jpg");
 
 background-size:cover;
 background-position:center;
@@ -63,6 +64,7 @@ justify-content:center;
 text-align:center;
 
 color:white;
+
 }
 
 .hero-content{
@@ -102,7 +104,7 @@ font-size:17px;
 line-height:1.7;
 }
 
-/* PAGES */
+/* PAGE */
 
 .page{
 padding:20px 20px 40px 20px;
