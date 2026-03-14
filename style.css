@@ -1,14 +1,15 @@
 body{
 margin:0;
 font-family:Arial, sans-serif;
-background:#f5f3ef;
-color:#333;
+background:#4fa7a0;
+color:#1f1f1f;
 }
 
 header{
-background:#7a1f1f;
-color:white;
+background:#4fa7a0;
+color:#1f1f1f;
 padding:20px;
+border-bottom:3px solid #d4a24c;
 }
 
 .nav{
@@ -20,31 +21,29 @@ align-items:center;
 }
 
 nav a{
-color:white;
+color:#1f1f1f;
 margin-left:20px;
 text-decoration:none;
 font-weight:bold;
 }
 
+nav a:hover
+
 .subtitle{
 font-size:14px;
-opacity:0.9;
 margin-top:-10px;
+color:#333;
 }
 
 .hero{
-height:80vh;
-background-image:url("https://images.unsplash.com/photo-1600891964599-f61ba0e24092");
-background-size:cover;
-background-position:center;
-
+height:70vh;
+background:#4fa7a0;
 display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
-
-color:white;
 text-align:center;
+padding:20px;
 }
 
 .hero h2{
@@ -56,17 +55,19 @@ margin:10px;
 font-size:18px;
 max-width:600px;
 line-height:1.6;
-margin-top:10px;
 }
 
 .button{
 background:#d4a24c;
-padding:15px 30px;
-color:white;
+color:#1f1f1f;
+padding:14px 28px;
 text-decoration:none;
-border-radius:5px;
+border-radius:6px;
 margin-top:20px;
+font-weight:bold;
 }
+
+.button:hover
 
 .menu{
 padding:80px 20px;
@@ -83,22 +84,22 @@ margin-top:40px;
 }
 
 .menu-card{
-background:white;
+background:#f5f3ef;
 padding:20px;
 border-radius:8px;
-box-shadow:0 4px 10px rgba(0,0,0,0.1);
+border:2px solid #d4a24c;
 }
 
 .menu-card h4{
 margin-top:0;
-color:#7a1f1f;
+color:#1f1f1f;
 }
 
 .menu-card span{
 display:block;
 margin-top:10px;
 font-weight:bold;
-color:#d4a24c;
+color:#7a5a1f;
 }
 
 .instagram-hint{
