@@ -1,103 +1,278 @@
-<!DOCTYPE html>
+body{
+margin:0;
+font-family:'Poppins', sans-serif;
+background:#4fa7a0;
+color:#1f1f1f;
+}
 
-<html lang="de">
-<head>
+/* HEADER */
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+header{
+background:#4fa7a0;
+border-bottom:3px solid #d4a24c;
+position:sticky;
+top:0;
+z-index:1000;
+}
 
-<title>La Caseta Singen</title>
+.nav{
+max-width:1100px;
+margin:auto;
+padding:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+}
 
-<link rel="stylesheet" href="style.css">
+.logo-title{
+display:flex;
+align-items:center;
+gap:10px;
+}
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+.logo{
+width:55px;
+}
 
-</head>
+nav{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
 
-<body>
+nav a{
+text-decoration:none;
+font-weight:600;
+color:#1f1f1f;
+}
 
-<header>
+nav a:hover
 
-<div class="nav">
+nav a.active{
+color:#d4a24c;
+}
 
-<div class="logo-title">
-<img src="logo.png" class="logo">
-<h1>La Caseta Singen</h1>
-</div>
+/* HERO WRAPPER */
 
-<nav>
-<a class="active" href="index.html">Startseite</a>
-<a href="menu.html">Menü</a>
-<a href="kontakt.html">Kontakt</a>
-<a href="https://www.instagram.com/lacaseta_singen/" target="_blank">Instagram</a>
-</nav>
+.hero-wrapper{
+max-width:1100px;
+margin:auto;
+padding:0 20px;
+}
 
-</div>
+/* HERO */
 
-</header>
+.hero{
 
-<section class="hero-wrapper">
+height:420px;
 
-<div class="hero">
+background:
+linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+url("paella.jpg");
 
-<div class="hero-content">
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
 
-<h2>World Streetfood.<br>Next-Level Flavor.</h2>
+border-radius:12px;
 
-<p>
-Spanisches Streetfood, frische Paella,
-Smoker-Gerichte und kreative Specials.
-</p>
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
 
-<a class="button" href="menu.html">Menü ansehen</a>
+color:white;
 
-</div>
+}
 
-</div>
+.hero-content{
+max-width:650px;
+padding:20px;
+}
 
-</section>
+.hero h2{
+font-size:40px;
+margin-bottom:15px;
+}
 
-<section class="food-gallery">
+.hero p{
+font-size:18px;
+line-height:1.6;
+}
 
-<div class="gallery-container">
+.button{
+display:inline-block;
+margin-top:20px;
+padding:12px 26px;
+background:#d4a24c;
+color:#1f1f1f;
+text-decoration:none;
+border-radius:6px;
+font-weight:600;
+}
 
-<div class="food-card">
-<img src="ramen.jpg" alt="Streetfood Bowl">
-</div>
+/* FOOD GALLERY */
 
-<div class="food-card">
-<img src="fries.jpg" alt="Loaded Fries">
-</div>
+.food-gallery{
+max-width:1100px;
+margin:60px auto;
+padding:0 20px;
+}
 
-<div class="food-card">
-<img src="sandwich.jpg" alt="Sandwich">
-</div>
+.gallery-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
 
-</div>
+.food-card{
+overflow:hidden;
+border-radius:10px;
+box-shadow:0 4px 12px rgba(0,0,0,0.2);
+background:white;
+}
 
-</section>
+.food-card img{
+width:100%;
+height:200px;
+object-fit:cover;
+display:block;
+transition:transform 0.3s ease;
+}
 
-<section class="intro">
+.food-card img:hover{
+transform:scale(1.05);
+}
 
-<h2>Spanisches Streetfood in Singen</h2>
+/* INTRO */
 
-<p>
+.intro{
+max-width:700px;
+margin:70px auto;
+padding:0 20px;
+text-align:center;
+font-size:17px;
+line-height:1.7;
+}
 
-Bei <strong>La Caseta</strong> verbinden wir klassische spanische Küche
-mit modernen Streetfood-Ideen.
+/* PAGE */
 
-</p>
+.page{
+max-width:900px;
+margin:40px auto;
+padding:0 20px;
+text-align:center;
+}
 
-<p>
+/* MENU */
 
-Neben unserem festen Wochenmenü bieten wir regelmäßig
-wechselnde Streetfood-Specials an.
-Ob Paella, Smoker BBQ oder Sandwiches –
-bei uns findet ihr ehrliches Streetfood mit viel Geschmack.
+.menu-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+margin-top:35px;
+}
 
-</p>
+.menu-card{
+background:#f5f3ef;
+border-radius:10px;
+border:3px solid #d4a24c;
 
-</section>
+display:flex;
+align-items:center;
+justify-content:center;
 
-</body>
-</html>
+padding:20px;
+min-height:180px;
+
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+
+transition:transform 0.2s ease;
+}
+
+.menu-card:hover{
+transform:translateY(-5px);
+}
+
+.menu-inner{
+text-align:center;
+}
+
+.menu-card span{
+display:block;
+margin-top:10px;
+font-weight:600;
+}
+
+.menu-note{
+margin-top:25px;
+}
+
+.instagram-button{
+display:inline-block;
+margin-top:20px;
+padding:12px 24px;
+background:#d4a24c;
+border-radius:6px;
+text-decoration:none;
+color:#1f1f1f;
+font-weight:600;
+}
+
+/* CONTACT */
+
+.kontakt-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:40px;
+margin-top:40px;
+text-align:left;
+}
+
+.map{
+margin-top:40px;
+}
+
+.map iframe{
+width:100%;
+height:350px;
+border:0;
+border-radius:8px;
+}
+
+/* OPENING HOURS */
+
+.opening-hours{
+width:100%;
+max-width:300px;
+border-collapse:collapse;
+margin-top:10px;
+}
+
+.opening-hours td{
+padding:8px 0;
+border-bottom:1px solid rgba(0,0,0,0.1);
+}
+
+/* MOBILE */
+
+@media (max-width:768px){
+
+.hero{
+height:260px;
+}
+
+.hero h2{
+font-size:26px;
+}
+
+.hero p{
+font-size:16px;
+}
+
+nav{
+justify-content:center;
+}
+
+}
