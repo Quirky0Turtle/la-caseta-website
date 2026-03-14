@@ -283,10 +283,14 @@ gap:10px;
 grid-template-columns:1fr;
 }
 
-/* WICHTIG: Adresse + Öffnungszeiten untereinander */
+/* Adresse + Öffnungszeiten untereinander */
 
 .contact-grid{
-grid-template-columns:1fr;
+display:block;
+}
+
+.contact-card{
+margin-bottom:25px;
 }
 
 }
