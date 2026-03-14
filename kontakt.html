@@ -34,6 +34,8 @@
 
 <h2>Kontakt</h2>
 
+<p id="openStatus" class="open-status"></p>
+
 <div class="kontakt-grid">
 
 <div>
@@ -88,6 +90,36 @@ loading="lazy">
 </div>
 
 </section>
+
+<script>
+
+const hours = {
+1:[11,15],
+2:[11,15],
+3:[11,15],
+4:[11,15],
+5:[11,17]
+};
+
+const now = new Date();
+const day = now.getDay();
+const hour = now.getHours();
+const status = document.getElementById("openStatus");
+
+if(hours[day]){
+let open = hours[day][0];
+let close = hours[day][1];
+
+if(hour >= open && hour < close){
+status.innerHTML = "🟢 Heute geöffnet";
+}else{
+status.innerHTML = "🔴 Heute geschlossen";
+}
+}else{
+status.innerHTML = "🔴 Heute geschlossen";
+}
+
+</script>
 
 </body>
 </html>
