@@ -16,7 +16,7 @@ z-index:1000;
 }
 
 .nav{
-max-width:1000px;
+max-width:1100px;
 margin:auto;
 padding:20px;
 display:flex;
@@ -75,8 +75,7 @@ background-size:cover;
 background-position:center;
 background-repeat:no-repeat;
 
-border-radius:10px;
-margin-top:20px;
+border-radius:12px;
 
 display:flex;
 align-items:center;
@@ -116,7 +115,7 @@ font-weight:600;
 /* FOOD GALLERY */
 
 .food-gallery{
-max-width:1000px;
+max-width:1100px;
 margin:60px auto;
 padding:0 20px;
 }
@@ -261,11 +260,11 @@ border-bottom:1px solid rgba(0,0,0,0.1);
 @media (max-width:768px){
 
 .hero{
-height:280px;
+height:260px;
 }
 
 .hero h2{
-font-size:28px;
+font-size:26px;
 }
 
 .hero p{
