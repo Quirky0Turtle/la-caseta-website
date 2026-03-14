@@ -1,201 +1,75 @@
-body{
-margin:0;
-font-family:'Poppins', sans-serif;
-background:#4fa7a0;
-color:#1f1f1f;
-}
+<!DOCTYPE html>
 
-header{
-background:#4fa7a0;
-padding:20px;
-border-bottom:3px solid #d4a24c;
-position:sticky;
-top:0;
-z-index:1000;
-}
+<html lang="de">
+<head>
 
-.nav{
-max-width:1100px;
-margin:auto;
-display:flex;
-justify-content:space-between;
-align-items:center;
-flex-wrap:wrap;
-}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-.logo-title{
-display:flex;
-align-items:center;
-gap:10px;
-}
+<title>La Caseta Singen</title>
 
-.logo{
-width:55px;
-}
+<link rel="stylesheet" href="style.css">
 
-nav{
-display:flex;
-gap:20px;
-flex-wrap:wrap;
-}
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-nav a{
-text-decoration:none;
-font-weight:600;
-color:#1f1f1f;
-}
+</head>
 
-nav a:hover
+<body>
 
-nav a.active{
-color:#d4a24c;
-}
+<header>
 
-/* HERO */
+<div class="nav">
 
-.hero{
+<div class="logo-title">
+<img src="logo.png" class="logo">
+<h1>La Caseta Singen</h1>
+</div>
 
-height:65vh;
+<nav>
+<a class="active" href="index.html">Startseite</a>
+<a href="menu.html">Menü</a>
+<a href="kontakt.html">Kontakt</a>
+<a href="https://www.instagram.com/lacaseta_singen/" target="_blank">Instagram</a>
+</nav>
 
-background:
-linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-url("paella.jpg");
+</div>
 
-background-size:cover;
-background-position:center;
+</header>
 
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
+<section class="hero">
 
-color:white;
+<div class="hero-content">
 
-}
+<h2>World Streetfood.<br>Next-Level Flavor.</h2>
 
-.hero-content{
-max-width:700px;
-padding:20px;
-}
+<p>
+Spanisches Streetfood, frische Paella,
+Smoker-Gerichte und kreative Specials.
+</p>
 
-.hero h2{
-font-size:42px;
-margin-bottom:15px;
-}
+<a class="button" href="menu.html">Menü ansehen</a>
 
-.hero p{
-font-size:18px;
-line-height:1.6;
-}
+</div>
 
-.button{
-display:inline-block;
-margin-top:20px;
-padding:12px 26px;
-background:#d4a24c;
-color:#1f1f1f;
-text-decoration:none;
-border-radius:6px;
-font-weight:600;
-}
+</section>
 
-/* INTRO */
+<section class="intro">
 
-.intro{
-padding:80px 20px;
-max-width:850px;
-margin:auto;
-text-align:center;
-font-size:17px;
-line-height:1.7;
-}
+<h2>Spanisches Streetfood in Singen</h2>
 
-/* PAGE */
+<p>
+Bei <strong>La Caseta</strong> verbinden wir klassische spanische Küche
+mit modernen Streetfood-Ideen.
+</p>
 
-.page{
-padding:20px 20px 40px 20px;
-max-width:1100px;
-margin:auto;
-text-align:center;
-}
+<p>
+Neben unserem festen Wochenmenü bieten wir regelmäßig
+wechselnde Streetfood-Specials an.  
+Ob Paella, Smoker BBQ oder Sandwiches –
+bei uns findet ihr ehrliches Streetfood mit viel Geschmack.
+</p>
 
-/* MENU */
+</section>
 
-.menu-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-margin-top:30px;
-}
-
-.menu-card{
-background:#f5f3ef;
-border-radius:10px;
-border:3px solid #d4a24c;
-display:flex;
-justify-content:center;
-align-items:center;
-padding:20px;
-min-height:180px;
-box-shadow:0 4px 10px rgba(0,0,0,0.1);
-}
-
-.menu-inner{
-text-align:center;
-}
-
-.menu-card span{
-display:block;
-margin-top:10px;
-font-weight:600;
-}
-
-.menu-note{
-margin-top:25px;
-}
-
-.instagram-button{
-display:inline-block;
-margin-top:20px;
-padding:12px 24px;
-background:#d4a24c;
-border-radius:6px;
-text-decoration:none;
-color:#1f1f1f;
-font-weight:600;
-}
-
-/* CONTACT */
-
-.kontakt-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:40px;
-margin-top:40px;
-text-align:left;
-}
-
-.map{
-margin-top:40px;
-}
-
-.map iframe{
-width:100%;
-height:350px;
-border:0;
-border-radius:8px;
-}
-
-/* MOBILE */
-
-@media (max-width:768px){
-
-.hero h2{
-font-size:28px;
-}
-
-.hero p{
-font-size:16px;
-}
-
-}
+</body>
+</html>
