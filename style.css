@@ -80,11 +80,6 @@ background:#d4a24c;
 
 .hero{
 height:420px;
-background:
-linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-url("paella.jpg");
-background-size:cover;
-background-position:center;
 border-radius:12px;
 margin-top:20px;
 display:flex;
@@ -92,6 +87,14 @@ align-items:center;
 justify-content:center;
 text-align:center;
 color:white;
+
+background-image:
+linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+url("paella.jpg");
+
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
 }
 
 .hero-content{
@@ -122,7 +125,7 @@ border-radius:6px;
 font-weight:600;
 }
 
-/* FOOD GALLERY (Startseite Bilder) */
+/* FOOD GALLERY */
 
 .food-gallery{
 max-width:1100px;
@@ -177,7 +180,7 @@ gap:25px;
 margin-top:30px;
 }
 
-/* MENU CARD (goldener Rahmen wieder da) */
+/* MENU CARD */
 
 .menu-card{
 background:#f5f3ef;
@@ -284,6 +287,24 @@ grid-template-columns:1fr;
 
 .gallery-container{
 grid-template-columns:1fr;
+}
+
+/* MOBILE Öffnungszeiten */
+
+.hours{
+width:100%;
+font-size:16px;
+}
+
+.hours td{
+padding:12px 0;
+display:flex;
+justify-content:space-between;
+border-bottom:1px solid rgba(255,255,255,0.25);
+}
+
+.hours td:first-child{
+font-weight:600;
 }
 
 }
