@@ -36,31 +36,17 @@ color:#333;
 
 .hero{
 min-height:70vh;
-background:#4fa7a0;
 display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
 padding:40px 20px;
-position:relative;
 }
 
-.hero::before{
-content:"";
-position:absolute;
-top:0;
-left:0;
-right:0;
-bottom:0;
-
-background-image:url("logo.png");
-background-repeat:no-repeat;
-background-position:center;
-background-size:400px;
-
-opacity:0.08;
-pointer-events:none;
+.hero-logo{
+width:200px;
+margin-bottom:20px;
 }
 
 h1{
@@ -129,10 +115,18 @@ font-weight:bold;
 color:#7a5a1f;
 }
 
-.instagram-hint{
+.instagram-button{
+display:inline-block;
 margin-top:20px;
+background:#d4a24c;
+padding:14px 28px;
+text-decoration:none;
+color:#1f1f1f;
+border-radius:6px;
 font-weight:bold;
 }
+
+.instagram-button:hover
 
 .kontakt{
 padding:80px 20px;
@@ -193,7 +187,7 @@ border:0;
 border-radius:8px;
 }
 
-/* Mobile Optimierung */
+/* Mobile */
 
 @media (max-width:768px){
 
@@ -201,6 +195,10 @@ border-radius:8px;
 flex-direction:column;
 gap:10px;
 text-align:center;
+}
+
+.hero-logo{
+width:140px;
 }
 
 .hero h2{
