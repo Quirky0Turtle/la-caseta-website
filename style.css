@@ -3,6 +3,7 @@ margin:0;
 font-family:'Poppins', sans-serif;
 background:#4fa7a0;
 color:#1f1f1f;
+overflow-x:hidden;
 }
 
 /* GLOBAL CONTAINER */
@@ -78,6 +79,7 @@ background:#d4a24c;
 /* HERO */
 
 .hero{
+
 height:420px;
 
 background:
@@ -96,6 +98,7 @@ justify-content:center;
 text-align:center;
 
 color:white;
+
 }
 
 .hero-content{
@@ -170,7 +173,7 @@ margin:50px auto;
 padding:0 20px;
 }
 
-/* MENU GRID */
+/* MENU */
 
 .menu-grid{
 display:grid;
@@ -180,17 +183,18 @@ margin-top:30px;
 }
 
 .menu-card{
-background:#f5f3ef;
-border:3px solid #d4a24c;
+background:rgba(255,255,255,0.2);
+border:2px solid #d4a24c;
 border-radius:10px;
 padding:25px;
 transition:all 0.2s ease;
+backdrop-filter:blur(4px);
 }
 
 .menu-card:hover{
 transform:translateY(-4px);
 box-shadow:0 6px 18px rgba(0,0,0,0.2);
-background:#fff;
+background:rgba(255,255,255,0.35);
 }
 
 /* KONTAKT GRID */
@@ -203,10 +207,11 @@ margin-top:40px;
 }
 
 .contact-box{
-background:white;
+background:rgba(255,255,255,0.15);
 padding:30px;
 border-radius:10px;
-box-shadow:0 4px 12px rgba(0,0,0,0.15);
+border:1px solid rgba(255,255,255,0.2);
+backdrop-filter:blur(4px);
 }
 
 /* OPENING HOURS */
@@ -218,7 +223,7 @@ border-collapse:collapse;
 
 .hours td{
 padding:8px 0;
-border-bottom:1px solid #eee;
+border-bottom:1px solid rgba(255,255,255,0.2);
 }
 
 /* MAP */
@@ -234,44 +239,4 @@ margin-top:40px;
 /* FOOTER */
 
 footer{
-margin-top:80px;
-padding:30px;
-text-align:center;
-font-size:14px;
-background:#4fa7a0;
-border-top:2px solid #d4a24c;
-}
-
-footer a{
-color:#1f1f1f;
-text-decoration:none;
-font-weight:600;
-}
-
-footer a:hover
-
-/* MOBILE */
-
-@media (max-width:768px){
-
-.hero{
-height:260px;
-}
-
-.hero h2{
-font-size:26px;
-}
-
-.hero p{
-font-size:16px;
-}
-
-nav{
-justify-content:center;
-}
-
-.contact-grid{
-grid-template-columns:1fr;
-}
-
-}
+margin-to
