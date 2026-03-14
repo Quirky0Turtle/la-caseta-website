@@ -63,10 +63,11 @@ background:
 linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
 url("paella.jpg");
 
-background-size:contain;
+background-size:cover;
 background-position:center;
 background-repeat:no-repeat;
-background-color:#2e2e2e;
+
+background-attachment:fixed;
 
 display:flex;
 align-items:center;
@@ -145,6 +146,12 @@ padding:20px;
 min-height:180px;
 
 box-shadow:0 4px 10px rgba(0,0,0,0.1);
+
+transition:transform 0.2s ease;
+}
+
+.menu-card:hover{
+transform:translateY(-5px);
 }
 
 .menu-inner{
@@ -199,7 +206,7 @@ border-radius:8px;
 
 .hero{
 height:300px;
-background-size:cover;
+background-attachment:scroll;
 }
 
 .hero h2{
