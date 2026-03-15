@@ -60,6 +60,10 @@ position:relative;
 padding-bottom:5px;
 }
 
+nav a:hover{
+color:#d4a24c;
+}
+
 nav a.active{
 color:#1f1f1f;
 }
@@ -199,7 +203,7 @@ display:grid;
 grid-template-columns:1fr 1fr;
 gap:40px;
 margin-top:40px;
-align-items:stretch;
+align-items:start;
 }
 
 /* KONTAKT BOX */
@@ -210,48 +214,51 @@ border-radius:12px;
 padding:30px;
 backdrop-filter:blur(6px);
 border:1px solid rgba(255,255,255,0.25);
-display:flex;
-flex-direction:column;
+box-sizing:border-box;
 }
 
-.contact-card h3{
-margin-top:0;
-margin-bottom:25px;
-font-size:20px;
-}
+/* ICON + TEXT */
 
-/* KONTAKT ELEMENTE */
-
-.contact-item{
+.contact-row{
 display:flex;
 align-items:flex-start;
 gap:12px;
-margin-bottom:25px;
+margin-bottom:22px;
 }
 
 .contact-icon{
 width:22px;
-height:22px;
-color:#d4a24c;
-flex-shrink:0;
 margin-top:3px;
+flex-shrink:0;
 }
 
-.contact-text strong{
-display:block;
-font-size:17px;
+.contact-content{
+flex:1;
+margin-bottom:10px;
+}
+
+.contact-title{
+font-size:18px;
+font-weight:700;
 margin-bottom:6px;
 }
 
 .contact-text{
+font-size:16px;
 line-height:1.6;
 }
 
-/* ÖFFNUNGSZEITEN */
+.contact-text a{
+color:#1f1f1f;
+text-decoration:none;
+}
+
+/* OEFFNUNGSZEITEN */
 
 .hours{
 width:100%;
 border-collapse:collapse;
+margin-top:10px;
 }
 
 .hours td{
@@ -290,6 +297,10 @@ text-decoration:none;
 font-weight:600;
 }
 
+footer a:hover{
+color:#d4a24c;
+}
+
 /* MOBILE */
 
 @media (max-width:768px){
@@ -319,10 +330,19 @@ grid-template-columns:1fr;
 
 .contact-grid{
 grid-template-columns:1fr;
+gap:25px;
+padding:0 5px;
 }
 
 .contact-card{
-margin-bottom:25px;
+width:100%;
+margin-bottom:10px;
+}
+
+/* Map kleiner */
+
+.map iframe{
+height:300px;
 }
 
 }
