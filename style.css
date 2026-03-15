@@ -213,23 +213,28 @@ backdrop-filter:blur(6px);
 border:1px solid rgba(255,255,255,0.25);
 }
 
-/* ADDRESS */
+/* KONTAKT ELEMENTE */
 
-.address{
-line-height:1.8;
-margin-bottom:20px;
+.contact-item{
+display:flex;
+justify-content:space-between;
+align-items:flex-start;
+margin-bottom:18px;
+font-size:16px;
 }
 
-/* PHONE */
-
-.phone{
-margin-bottom:15px;
+.contact-label{
+font-weight:600;
+min-width:90px;
 }
 
-.phone a{
-text-decoration:none;
-font-weight:500;
+.contact-text{
+text-align:right;
+}
+
+.contact-text a{
 color:#1f1f1f;
+text-decoration:none;
 }
 
 /* ÖFFNUNGSZEITEN */
@@ -237,6 +242,7 @@ color:#1f1f1f;
 .hours{
 width:100%;
 border-collapse:collapse;
+margin-top:10px;
 }
 
 .hours td{
@@ -302,7 +308,7 @@ gap:10px;
 grid-template-columns:1fr;
 }
 
-/* Adresse + Öffnungszeiten untereinander */
+/* Kontakt untereinander */
 
 .contact-grid{
 display:block;
@@ -310,6 +316,15 @@ display:block;
 
 .contact-card{
 margin-bottom:25px;
+}
+
+.contact-item{
+flex-direction:column;
+align-items:flex-start;
+}
+
+.contact-text{
+text-align:left;
 }
 
 }
