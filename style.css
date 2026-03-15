@@ -326,11 +326,13 @@ grid-template-columns:1fr;
 .contact-grid{
 display:grid;
 grid-template-columns:1fr;
-gap:25px;
+gap:20px;
+padding:0 5px;
 }
 
 .contact-card{
 width:100%;
+box-sizing:border-box;
 margin-bottom:10px;
 }
 
