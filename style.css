@@ -60,7 +60,9 @@ position:relative;
 padding-bottom:5px;
 }
 
-nav a:hover
+nav a:hover{
+color:#d4a24c;
+}
 
 nav a.active{
 color:#1f1f1f;
@@ -213,7 +215,7 @@ backdrop-filter:blur(6px);
 border:1px solid rgba(255,255,255,0.25);
 }
 
-/* ICON + TEXT REIHE */
+/* ICON + TEXT */
 
 .contact-row{
 display:flex;
@@ -222,28 +224,19 @@ margin-bottom:25px;
 align-items:flex-start;
 }
 
-/* ICON */
-
 .contact-icon{
-font-size:22px;
 width:28px;
 }
-
-/* TEXT BEREICH */
 
 .contact-content{
 flex:1;
 }
-
-/* TITEL */
 
 .contact-title{
 font-size:18px;
 font-weight:600;
 margin-bottom:5px;
 }
-
-/* TEXT */
 
 .contact-text{
 font-size:16px;
@@ -299,9 +292,11 @@ text-decoration:none;
 font-weight:600;
 }
 
-footer a:hover
+footer a:hover{
+color:#d4a24c;
+}
 
-/* MOBILE */
+/* MOBILE FIX */
 
 @media (max-width:768px){
 
@@ -329,12 +324,20 @@ grid-template-columns:1fr;
 /* Kontakt untereinander */
 
 .contact-grid{
+display:grid;
 grid-template-columns:1fr;
-  background:red;
+gap:25px;
 }
 
 .contact-card{
-margin-bottom:25px;
+width:100%;
+margin-bottom:10px;
+}
+
+/* Map kleiner */
+
+.map iframe{
+height:300px;
 }
 
 }
