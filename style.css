@@ -60,12 +60,10 @@ position:relative;
 padding-bottom:5px;
 }
 
-nav a:hover{
-color:#d4a24c;
-}
+nav a:hover
 
 nav a.active{
-color:#d4a24c;
+color:#1f1f1f;
 }
 
 nav a.active::after{
@@ -215,6 +213,25 @@ backdrop-filter:blur(6px);
 border:1px solid rgba(255,255,255,0.25);
 }
 
+/* ADDRESS */
+
+.address{
+line-height:1.8;
+margin-bottom:20px;
+}
+
+/* PHONE */
+
+.phone{
+margin-bottom:15px;
+}
+
+.phone a{
+text-decoration:none;
+font-weight:500;
+color:#1f1f1f;
+}
+
 /* ÖFFNUNGSZEITEN */
 
 .hours{
@@ -258,10 +275,7 @@ text-decoration:none;
 font-weight:600;
 }
 
-footer a:hover{
-color:#d4a24c;
-}
-
+footer a:hover
 
 /* MOBILE */
 
