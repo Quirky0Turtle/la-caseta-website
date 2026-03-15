@@ -203,7 +203,7 @@ display:grid;
 grid-template-columns:1fr 1fr;
 gap:40px;
 margin-top:40px;
-align-items:start;
+align-items:stretch;
 }
 
 /* KONTAKT BOX */
@@ -214,7 +214,8 @@ border-radius:12px;
 padding:30px;
 backdrop-filter:blur(6px);
 border:1px solid rgba(255,255,255,0.25);
-box-sizing:border-box;
+display:flex;
+flex-direction:column;
 }
 
 /* ICON + TEXT */
